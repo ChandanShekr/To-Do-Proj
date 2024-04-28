@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="title">
+            <div class="todo">TO-DO</div>
+            <div class="toggle"><img src="images/icon-moon.svg" alt="" srcset=""></div>
+        </div>
+        <div class="addNote">
+            <div class="NcheckBtn">
+                <img src="images/icon-check.svg" alt="">
+            </div>
+            <input type="text" placeholder="Create a new todo...." class="inputForNewNote">
+        </div>
+        <div class="displayNotes">
+            <div class="listItem" draggable="true">
+                <div class="checkBtn activeCheckBox">
+                    <img src="images/icon-check.svg" alt="">
+                </div>
+                <div class="noteOutput active">Complete Online JS Course</div>
+            </div>
+            <div class="listItem" draggable="true">
+                <div class="checkBtn">
+                    <img src="images/icon-check.svg" alt="">
+                </div>
+                <div class="noteOutput">10 Minutes Meditation</div>
+            </div>
+            <div class="listItem" draggable="true">
+                <div class="checkBtn">
+                    <img src="images/icon-check.svg" alt="">
+                </div>
+                <div class="noteOutput">Read for 1 hour</div>
+            </div>
+            <div class="listItem" draggable="true">
+                <div class="checkBtn">
+                    <img src="images/icon-check.svg" alt="">
+                </div>
+                <div class="noteOutput">Pick-up groceries</div>
+            </div>
+            <div class="listItem" draggable="true">
+                <div class="checkBtn">
+                    <img src="images/icon-check.svg" alt="">
+                </div>
+                <div class="noteOutput">Return Book to Library</div>
+            </div>
+        </div>
+        <div class="actionBtns">
+            <div class="itemsLeft hide-on-mobile">x item(s) left</div>
+            <div class="filterBtns">
+                <div class="All mx-2">all</div>
+                <div class="Active mx-2">active</div>
+                <div class="Completed mx-2">completed</div>
+            </div>
+            <div class="clear hide-on-mobile">clear Completed</div>
+        </div>
+        <div class="notify">Key Feature - drag and drop to reorder the list according to your priority</div>
+    </div>
+
+    <div class="attribution">
+    IEEE-CS Task by Chandan S (22BCE3122).
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
