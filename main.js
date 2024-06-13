@@ -1,12 +1,10 @@
 console.log("succesfully linked");
 
-//=================================================================
-// below code is to add drag and drop in the website
-//=================================================================
+
 const draggables = document.querySelectorAll('.listItem');
-// console.log(draggables);
+
 const container = document.querySelector('.displayNotes')
-    // console.log(container)
+   
 let positionObj = { offset: Number.NEGATIVE_INFINITY }
 
 function distanceBetweenItemPositionAndDroppedPosition(item, droppedPosition) {
@@ -15,14 +13,14 @@ function distanceBetweenItemPositionAndDroppedPosition(item, droppedPosition) {
 }
 
 draggables.forEach(item => {
-    // console.log(item.childNodes[3].innerText);
+  
     item.addEventListener('dragstart', (e) => {
-        // console.log("dragstart event has been fired");
+      
         e.target.classList.add('dragging');
     })
     item.addEventListener('dragend', (e) => {
         e.target.classList.remove('dragging');
-        // console.log("dragend event has been fired too");
+       
     })
 })
 
@@ -45,9 +43,7 @@ container.addEventListener('drop', (e) => {
         container.insertBefore(dragging, positionObj.element)
         console.log(positionObj.element);
     })
-    //=================================================================
-    // drag and drop code ends here
-    //=================================================================
+
 
 let noOfNotes = 5;
 updateNoOfNodes(noOfNotes);
